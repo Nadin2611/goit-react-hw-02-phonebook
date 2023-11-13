@@ -41,7 +41,7 @@ export class ContactForm extends Component {
               value={this.state.name}
               onChange={this.handleChange}
               required
-              placeholder="John Smith"
+              placeholder="Rosie Simpson"
             ></Input>
           </Label>
         </FormContainer>
@@ -55,7 +55,7 @@ export class ContactForm extends Component {
               value={this.state.number}
               onChange={this.handleChange}
               required
-              placeholder="050 000 00 00"
+              placeholder="459-12-56"
             ></Input>
           </Label>
         </FormContainer>

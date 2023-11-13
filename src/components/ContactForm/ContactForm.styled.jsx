@@ -37,6 +37,7 @@ export const AddButton = styled.button`
   background: linear-gradient(#63e651, #42753e);
 
   &:hover {
+    color: ${props => props.theme.colors.white};
     background: linear-gradient(#51db1c, #6ba061);
   }
 `;
