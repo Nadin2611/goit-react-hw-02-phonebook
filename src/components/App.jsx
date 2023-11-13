@@ -17,7 +17,11 @@ export class App extends Component {
   };
 
   formSubmitHandler = data => {
-    if (this.state.contacts.some(contact => contact.name === data.name)) {
+    if (
+      this.state.contacts.some(
+        contact => contact.name.toLowerCase() === data.name.toLowerCase()
+      )
+    ) {
       alert(`${data.name} is already in contacts.`);
       return;
     } else {
