@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const ListItem = styled.li`
-  padding: 10px;
+  padding: ${props => props.theme.spacing(2)};
   border: 1px solid #ccc;
-  margin-bottom: 10px;
-  border-radius: 5px;
+  margin-bottom: ${props => props.theme.spacing(2)};
+  border-radius: ${props => props.theme.spacing(1)};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,15 +19,15 @@ export const ContactNumber = styled.span`
 `;
 
 export const DeleteButton = styled.button`
-  font-size: 1em;
-  border-radius: 8px;
-  padding: 10px;
-  border: 1px solid #ff4d4d;
-  box-shadow: 0 1px 0 0 #ff6666 inset;
-  background: linear-gradient(#ff6666, #cc0000);
+  font-size: ${props => props.theme.fontSizes.xs};
+  border-radius: ${props => props.theme.spacing(2)};
+  padding: ${props => props.theme.spacing(3)};
+  border: 1px solid ${props => props.theme.colors.pink};
+  box-shadow: ${props => props.theme.shadows.red};
+  background: ${props => props.theme.background.redBtn};
 
   &:hover {
     color: ${props => props.theme.colors.white};
-    background: linear-gradient(#ff3333, #cc0000);
+    background: ${props => props.theme.background.redHover};
   }
 `;

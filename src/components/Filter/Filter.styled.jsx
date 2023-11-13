@@ -14,8 +14,8 @@ export const FilterLabel = styled.label`
 
 export const FilterInput = styled.input`
   width: 350px;
-  padding: 10px;
-  font-size: 0.9em;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.07);
+  padding: ${props => props.theme.spacing(3)};
+  font-size: ${props => props.theme.fontSizes.xs};
+  border-radius: ${props => props.theme.spacing(2)};
+  background: ${props => props.theme.background.black};
 `;

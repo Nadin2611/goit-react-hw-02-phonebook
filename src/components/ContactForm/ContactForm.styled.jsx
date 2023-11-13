@@ -21,23 +21,23 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   width: 100%;
-  padding: 10px;
-  font-size: 0.9em;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.07);
+  padding: ${props => props.theme.spacing(3)};
+  font-size: ${props => props.theme.fontSizes.xs};
+  border-radius: ${props => props.theme.spacing(2)};
+  background: ${props => props.theme.background.black};
 `;
 
 export const AddButton = styled.button`
-  font-size: 1em;
-  border-radius: 8px;
-  padding: 10px;
-  border: 1px solid #59b969;
+  font-size: ${props => props.theme.fontSizes.xs};
+  border-radius: ${props => props.theme.spacing(2)};
+  padding: ${props => props.theme.spacing(3)};
+  border: 1px solid ${props => props.theme.colors.green};
   margin: 0 auto;
-  box-shadow: 0 1px 0 0 #60bd49 inset;
-  background: linear-gradient(#63e651, #42753e);
+  box-shadow: ${props => props.theme.shadows.green};
+  background: ${props => props.theme.background.greenBtn};
 
   &:hover {
     color: ${props => props.theme.colors.white};
-    background: linear-gradient(#51db1c, #6ba061);
+    background: ${props => props.theme.background.greenHover};
   }
 `;
