@@ -24,6 +24,7 @@ export const theme = Object.freeze({
     greenHover: 'linear-gradient(#51db1c, #6ba061)',
     redBtn: 'linear-gradient(#ff6666, #cc0000)',
     redHover: 'linear-gradient(#ff3333, #cc0000)',
+    blue: 'linear-gradient(#99ccff, #66a3ff)',
   },
 
   spacing: value => `${4 * value}px`,

@@ -25,6 +25,10 @@ export const Input = styled.input`
   font-size: ${props => props.theme.fontSizes.xs};
   border-radius: ${props => props.theme.spacing(2)};
   background: ${props => props.theme.background.black};
+
+  &:hover,
+  &:focus {
+    background: ${props => props.theme.background.blue};
 `;
 
 export const AddButton = styled.button`
