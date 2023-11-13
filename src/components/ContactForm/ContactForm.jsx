@@ -42,6 +42,7 @@ export class ContactForm extends Component {
               onChange={this.handleChange}
               required
               placeholder="Rosie Simpson"
+              pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я])$"
             ></Input>
           </Label>
         </FormContainer>
@@ -56,6 +57,7 @@ export class ContactForm extends Component {
               onChange={this.handleChange}
               required
               placeholder="459-12-56"
+              pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
             ></Input>
           </Label>
         </FormContainer>
